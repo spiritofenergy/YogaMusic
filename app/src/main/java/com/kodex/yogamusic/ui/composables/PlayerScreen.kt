@@ -50,8 +50,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.kodex.yogamusic.OnMusicButtonClick
 import com.kodex.yogamusic.R
-import com.kodex.yogamusic.models.MusicPlayerOption
-import com.kodex.yogamusic.models.Track
+import com.kodex.yogamusic.presentation.models.MusicPlayerOption
+import com.kodex.yogamusic.presentation.models.Track
 import com.kodex.yogamusic.ui.theme.titleFont
 
 @Composable

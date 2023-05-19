@@ -1,4 +1,4 @@
-package com.kodex.yogamusic.sign_in
+package com.kodex.yogamusic.presentation.sign_in
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Box
@@ -17,7 +17,6 @@ import androidx.compose.ui.unit.dp
 fun SignInScreen(
     state: SignInState,
     onSignInClick: () -> Unit,
-    function: () -> Unit
 ) {
         val context = LocalContext.current
     LaunchedEffect(key1 = state.signInError){

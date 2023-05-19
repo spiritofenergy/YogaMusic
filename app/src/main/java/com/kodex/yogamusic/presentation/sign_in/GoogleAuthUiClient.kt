@@ -1,9 +1,8 @@
-package com.kodex.yogamusic.sign_in
+package com.kodex.yogamusic.presentation.sign_in
 
 import android.content.Context
 import android.content.Intent
 import android.content.IntentSender
-import android.provider.Settings.NameValueTable
 import com.google.android.gms.auth.api.identity.BeginSignInRequest
 import com.google.android.gms.auth.api.identity.BeginSignInRequest.GoogleIdTokenRequestOptions
 import com.google.android.gms.auth.api.identity.SignInClient
@@ -11,6 +10,8 @@ import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.kodex.yogamusic.R
+import com.kodex.yogamusic.presentation.models.SignInResult
+import com.kodex.yogamusic.presentation.models.UserData
 import kotlinx.coroutines.tasks.await
 import java.lang.ClassCastException
 import java.util.concurrent.CancellationException
@@ -41,7 +42,7 @@ class GoogleAuthUiClient(
             val user = auth.signInWithCredential(googleCredentials).await().user
             SignInResult(
                 data = user?.run {
-                    SignInResult.UserData(
+                    UserData(
                             userId = uid,
                         userName = displayName,
                         profilePictureUrl = photoUrl?.toString()
@@ -68,8 +69,8 @@ class GoogleAuthUiClient(
          }
     }
 
-    fun detSignInUser(): SignInResult.UserData? = auth.currentUser?.run {
-        SignInResult.UserData(
+    fun getSignInUser():UserData? = auth.currentUser?.run {
+        UserData(
             userId = uid,
             userName = displayName,
             profilePictureUrl = photoUrl?.toString()

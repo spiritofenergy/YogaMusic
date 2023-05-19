@@ -30,11 +30,11 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.google.android.gms.auth.api.identity.Identity
 import com.google.firebase.auth.FirebaseAuth
-import com.kodex.yogamusic.models.MusicPlayerOption
-import com.kodex.yogamusic.models.Track
-import com.kodex.yogamusic.sign_in.GoogleAuthUiClient
-import com.kodex.yogamusic.sign_in.SignInScreen
-import com.kodex.yogamusic.sign_in.SignInViewModel
+import com.kodex.yogamusic.presentation.models.MusicPlayerOption
+import com.kodex.yogamusic.presentation.models.Track
+import com.kodex.yogamusic.presentation.sign_in.GoogleAuthUiClient
+import com.kodex.yogamusic.presentation.sign_in.SignInScreen
+import com.kodex.yogamusic.presentation.sign_in.SignInViewModel
 import com.kodex.yogamusic.ui.composables.AlbumList
 import com.kodex.yogamusic.ui.composables.LoadingScreen
 import com.kodex.yogamusic.ui.composables.Player

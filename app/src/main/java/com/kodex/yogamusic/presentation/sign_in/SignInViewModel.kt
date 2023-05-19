@@ -1,7 +1,7 @@
-package com.kodex.yogamusic.sign_in
+package com.kodex.yogamusic.presentation.sign_in
 
-import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
+import com.kodex.yogamusic.presentation.models.SignInResult
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

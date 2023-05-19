@@ -1,4 +1,4 @@
-package com.kodex.yogamusic.models
+package com.kodex.yogamusic.presentation.models
 
 import com.google.firebase.firestore.QueryDocumentSnapshot
 import com.kodex.yogamusic.utils.Constants
@@ -12,7 +12,7 @@ data class Track(
     var isPlaying: Boolean,
     val fileName: String
 )
-fun QueryDocumentSnapshot.toTrack(index: Int, imgUrl: String, trackUrl: String): Track{
+fun QueryDocumentSnapshot.toTrack(index: Int, imgUrl: String, trackUrl: String): Track {
     return Track(
         img = imgUrl,
         songTitle = this.getString(Constants.NAME)?: "",

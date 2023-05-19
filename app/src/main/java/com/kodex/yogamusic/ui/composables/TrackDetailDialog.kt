@@ -14,7 +14,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.kodex.yogamusic.R
-import com.kodex.yogamusic.models.Track
+import com.kodex.yogamusic.presentation.models.Track
 import com.kodex.yogamusic.ui.theme.dialogColor
 
 @Composable

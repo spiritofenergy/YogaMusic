@@ -33,7 +33,7 @@ import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.kodex.yogamusic.R
-import com.kodex.yogamusic.models.Track
+import com.kodex.yogamusic.presentation.models.Track
 
 @Composable
 fun AlbumList(

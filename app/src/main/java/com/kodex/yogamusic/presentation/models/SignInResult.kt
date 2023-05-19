@@ -1,14 +1,13 @@
-package com.kodex.yogamusic.sign_in
+package com.kodex.yogamusic.presentation.models
 
-import android.service.autofill.UserData
 
-class SignInResult (
+data class SignInResult(
     val data: UserData?,
-    val errorMessage : String?
-){
+    val errorMessage: String?
+)
     data class UserData(
         val userId: String?,
         val userName: String?,
         val profilePictureUrl: String?
     )
-}
+

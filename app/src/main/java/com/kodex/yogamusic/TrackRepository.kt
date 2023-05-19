@@ -5,8 +5,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
-import com.kodex.yogamusic.models.Track
-import com.kodex.yogamusic.models.toTrack
+import com.kodex.yogamusic.presentation.models.Track
+import com.kodex.yogamusic.presentation.models.toTrack
 import com.kodex.yogamusic.utils.Constants
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
